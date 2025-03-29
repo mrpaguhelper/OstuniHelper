@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OstuniHelper</title>
+
+    <!-- Botpress WebChat Scripts -->
     <script src="https://cdn.botpress.cloud/webchat/v2.3/inject.js"></script>
     <script src="https://files.bpcontent.cloud/2024/10/05/20/20241005204846-OVD4SDMB.js"></script>
+
     <style>
       body {
         margin: 0;
@@ -24,7 +27,14 @@
       }
     </style>
   </head>
+
   <body>
     <h1>OstuniHelper – La tua guida virtuale 🌞</h1>
+
+    <script>
+      window.botpressWebChat.init().then(() => {
+        window.botpressWebChat.sendEvent({ type: 'show' });
+      });
+    </script>
   </body>
 </html>
